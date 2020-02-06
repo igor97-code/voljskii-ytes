@@ -1,0 +1,38 @@
+.intro {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    canvas {
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.webgl-disabled {
+    .intro {
+        background: url('../img/intro-bg.jpg') right bottom no-repeat;
+        background-size: contain;
+
+        @include mobile {
+            background-position: 35% center;
+            background-size: cover;
+        }
+
+        @include tablet {
+            background-position: 15% center;
+            background-size: cover;
+        }
+
+        canvas {
+            display: none;
+        }
+    }
+
+}

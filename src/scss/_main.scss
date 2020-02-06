@@ -1,0 +1,208 @@
+.main {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: #000;
+    background: radial-gradient(at 60% 100%, #160000, #000000);
+    transition: opacity 1s ease;
+    transition-delay: 1s;
+
+    .content {
+        display: block;
+        position: absolute;
+        z-index: 20;
+        left: 6%;
+        right: 6%;
+        top: 5%;
+        bottom: 7%;
+
+        @include mobile {
+            top: 3%;
+            bottom: 3%;
+        }
+
+        @include mobile-landscape {
+            top: 5%;
+            bottom: 5%;
+        }
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            display: block;
+            margin: 0;
+            width: 11.1vh;
+            height: 11.1vh;
+
+            @include mobile {
+                width: 11.1vmax;
+                height: 11.1vmax;
+            }
+        }
+    }
+
+    .contacts {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        @include mobile {
+            left: auto;
+            right: 0;
+            top: 0;
+            bottom: auto;
+            text-align: right;
+        }
+
+        .item {
+            display: block;
+            margin: 0;
+            font-size: 1.56vh;
+            line-height: 1.33em;
+            color: $colorText;
+
+            @include desktop {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            @include mobile {
+                margin-bottom: 1vmax;
+                font-size: 1.56vmax;
+            }
+        }
+    }
+
+    .socials {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @include mobile {
+            left: 0;
+            justify-content: space-around;
+        }
+
+        @include mobile-landscape {
+            left: auto;
+            justify-content: flex-end;
+        }
+
+        .item {
+            margin: 0 0 0 3vh;
+            font-size: 1.56vh;
+            line-height: 1.33em;
+            color: $colorMain;
+
+            @include desktop {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            @include mobile {
+                margin-left: 1.5vmax;
+                margin-right: 1.5vmax;
+                font-size: 1.7vmax;
+            }
+
+            @include mobile-landscape {
+                margin-left: 5vmax;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .slogans {
+        display: block;
+        position: absolute;
+        left: 14%;
+        right: 14%;
+        top: 23%;
+
+        @include mobile {
+            left: 0;
+            right: 0;
+        }
+
+        @include mobile-landscape {
+            top: 40%;
+        }
+
+        .text {
+            display: block;
+            margin: 0;
+            padding-bottom: 2vmin;
+            //min-height: 22vmin;
+            font-size: 5.6vmin;
+            line-height: 1.2em;
+            font-weight: 100;
+            color: $colorText;
+
+            @include mobile {
+                padding-bottom: 2vmax;
+                font-size: 4vmax;
+                //min-height: 22vmax;
+            }
+
+            @include mobile-landscape {
+                //min-height: 15vmax;
+            }
+        }
+
+        .link {
+            display: block;
+            position: relative;
+            margin: 0;
+            min-height: 2vh;
+            padding-left: 2vh;
+            font-size: 1.56vh;
+            line-height: 1.33em;
+            color: $colorMain;
+            opacity: 0;
+
+            @include mobile {
+                font-size: 1.8vmax;
+                padding-left: 2vmax;
+                min-height: 2.5vmax;
+            }
+
+            &:before {
+                content: '>';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &.show {
+                opacity: 1;
+            }
+
+            @include desktop {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.show-main {
+    .main {
+        opacity: 1;
+    }
+}
