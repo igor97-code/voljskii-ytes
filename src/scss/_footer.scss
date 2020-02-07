@@ -1,0 +1,88 @@
+.footer{
+  display: block;
+  position: relative;
+  z-index: 100;
+ // margin: -563px 0 0;
+  //height: 563px;
+  background: $colorPurple;
+  padding-top:30px;
+  font-weight: 800;
+  font-family: Manrope;
+  .footer-logo{
+    margin:0 auto;
+    width:190px;
+    height:119px;
+    background-image: url(../img/footer-logo.png);
+  }
+  .footer-number{
+    font-style: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    color:$colorButton;
+    margin-top: 42px;
+  }
+  .footer-title{
+    font-size: 22px;
+    line-height: 29px;
+    color: $colorMain;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-email{
+    margin-top:30px;
+    font-size: 16px;
+    line-height: 29px;
+    color:$colorMain;
+    text-align: center;
+    opacity: 0.5;
+  }
+  .social{
+    margin:0 auto;
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+  }
+  .social-icon{
+    width:40px;
+    height: 40px;
+  }
+  .vk{
+    background-image: url(../img/others/social/vk.png);
+  }
+  .instagram{
+    background-image: url(../img/others/social/instagram.png);
+  }
+  .facebook{
+    background-image: url(../img/others/social/Vector.png);
+  }
+  .ok{
+    background-image: url(../img/others/social/ok.png);
+  }
+  .footer-attention{
+    margin-top:30px;
+    background:#000000;
+    opacity: 0.2;
+  }
+  .attention-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $colorMain;
+    opacity: 0.5;
+    text-align: center;
+    width:90%;
+  }
+  .attention-item{
+    width:25px;
+    height:22px;
+    background-image: url(../img/others/footer-icon.png);
+  }
+  .footer-attention-info{
+    display: flex;
+    align-items: center;
+    padding:23px 0;
+  }
+
+}

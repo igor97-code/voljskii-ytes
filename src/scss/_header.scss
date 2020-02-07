@@ -1,0 +1,59 @@
+.header{
+  display: block;
+  position: fixed;
+  z-index: 900;
+  height: 100px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: $colorMain;
+  &-margin {
+    height: 100px;
+
+  }
+  .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+      width:120px;
+      height:75px;
+      background-image: url(../img/logo.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+
+
+  }
+  .wrapper-logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .logo-title{
+    font-family: Manrope;
+    margin-left:50px;
+    padding-top:6px;
+    h2{
+      margin:0;
+      padding:0;
+
+      font-size:22px;
+      font-weight: 800;
+    }
+    p{
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color:$colorText;
+    }
+  }
+  .header_menu{
+    width:42px;
+    height:14px;
+    background-image: url(../img/menu.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+}

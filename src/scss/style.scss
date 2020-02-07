@@ -21,3 +21,15 @@
 
 // типографика контента
 @import 'typographic';
+
+//header
+@import 'header';
+
+//footer
+@import 'footer';
+//главные блоки страниц с информацией
+@import '_head-info';
+//позиционирование информации
+@import '_infographic';
+//Блок переключения услуг на главной странице.
+@import '_choice-points';

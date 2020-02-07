@@ -1,14 +1,37 @@
-<% var data = {
+<link rel="stylesheet" href="../../scss/_typographic.scss"><% var data = {
 title: "Волжский утес"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <div class="body">
-    <div class="header-margin"></div>
 
-    <div class="section">
-        <h1>Главная</h1>
+    <div class="section p-all-0">
+        <div class="head_info p1">
+            <div class="container">
+                <div class="head">
+                    <h1 class="text-align-center m-b-0">Санаторий «Волжский Утёс»</h1>
+                    <p class="text-align-center color-main m-t-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur<br> porttitor quis metus nec tincidunt.</p>
+
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="section">
+        <div class="container">
+            <h2 class="text-align-center m-t-0">Услуги санатория</h2>
+            <div class="choice-points">
+                <div class="item">программы </div>
+                <div class="item">лечение</div>
+                <div class="item">размещение</div>
+                <div class="item">чем заняться</div>
+                <div class="item">спа-центр</div>
+                <div class="item">рестораны</div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
