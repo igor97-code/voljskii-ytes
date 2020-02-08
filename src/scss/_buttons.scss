@@ -17,8 +17,17 @@
   border: 1px solid transparent;
   overflow: hidden;
 
-  .details{
+  &.details{
     width: 145px !important;
 
   }
+  &.all-programms{
+    width: 194px !important;
+    margin:0 auto;
+    a{
+      text-decoration: none;
+      color:$colorMain !important;
+    }
+  }
+
 }

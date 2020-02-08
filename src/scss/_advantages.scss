@@ -1,0 +1,27 @@
+.advantage{
+  position: relative;
+  display: block;
+  width: 343px;
+  overflow: hidden;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center top;
+  width:760px;
+  &:before{
+    content: " ";
+    display: block;
+    float: left;
+    margin: 0;
+    padding-top: 61%;
+  }
+  @for $i from 1 through 3{
+    &.advantage#{$i}{
+      background-image:  url(../../img/others/advantages/advantage#{$i}.png);
+    }
+  }
+
+}
+.advantage-info{
+  height:440px;
+  padding: 10%;
+}

@@ -213,4 +213,16 @@
         }
     }
 
+    .item{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 11px;
+        line-height: 15px;
+        //text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:$colorMain;
+    }
+
 }

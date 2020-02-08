@@ -1,5 +1,50 @@
 .choice-points{
     margin:0 auto;
+    max-width: 690px;
+    flex-wrap:wrap;
     display: flex;
     justify-content: space-between;
+    .item{
+        padding:7px;
+        border-radius:3px;
+        margin:7px;
+        color:$colorPurple;
+        border:1px solid $colorPurple;
+    }
+    .item-active{
+        background-color: $colorMain;
+        color:$colorMain !important;
+    }
+}
+.points-blocks{
+    margin:0 auto;
+    max-width: 1320px;
+    .choice-points-block{
+        position: relative;
+        display: block;
+        width: 343px;
+        overflow: hidden;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center top;
+        width:424px;
+        margin :12px 0;
+        &:before{
+            content: " ";
+            display: block;
+            float: left;
+            margin: 0;
+            padding-top: 61%;
+        }
+    }
+    @for $i from 1 through 6{
+        .b1i#{$i}{
+           background-image:  url(../../img/others/services/services#{$i}.jpeg);
+        }
+    }
+    .clr{
+        display: none;
+    }
+
+
 }
