@@ -5,6 +5,7 @@ $(function () {
    toggleMainMenu();
    oneItemSlider();
    playAboutVideo();
+   visibleAroundSlider()
 });
 
 function toggleMainMenu() {
@@ -21,6 +22,20 @@ function oneItemSlider() {
       vertical: false,
       arrows: false,
       dots: true,
+      customPaging: function (slider, i) {
+         return '<a>' + '</a>';
+      }
+   });
+}
+function visibleAroundSlider() {
+   $('.quest-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      vertical: false,
+      arrows: false,
+      dots: true,
+      centerMode: true,
       customPaging: function (slider, i) {
          return '<a>' + '</a>';
       }

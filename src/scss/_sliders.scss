@@ -337,8 +337,18 @@
 }
 
 .slider-guests{
-
-    .swiper-slide{
+    .quest-slider {
+        .slick-current {
+            .item {
+                padding: 0 50px;
+            }
+        }
+        .item {
+            position: relative;
+            padding: 0 50px;
+        }
+    }
+    /*.swiper-slide{
         width:576px;
         position: relative;
     }
@@ -351,7 +361,7 @@
         flex-shrink: 0;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         border-radius: 3px;
-    }
+    }*/
     .item-image{
         position: absolute;
         top: -40px;
