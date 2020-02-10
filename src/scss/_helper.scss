@@ -141,6 +141,7 @@
     margin-right: 0 !important;
 }
 
+
 .p-t-0 {
     padding-top: 0 !important;
 }
@@ -197,7 +198,9 @@
 .color-green {
     color: $colorMain;
 }
-
+.color-white {
+    color: $colorMain
+}
 .overflow-hidden {
     overflow: hidden;
 }
@@ -231,5 +234,9 @@
             border: 2px solid $colorButton;
         }
     }
+}
+.slick-loading .slick-list
+{
+    background: #fff !important;
 }
 

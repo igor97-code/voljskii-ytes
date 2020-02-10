@@ -2,20 +2,17 @@ import * as $ from 'jquery';
 import 'slick-carousel';
 
 $(function () {
-   initApp();
    toggleMainMenu();
    oneItemSlider();
+   playAboutVideo();
 });
-
-function initApp() {
-   console.log('initApp');
-}
 
 function toggleMainMenu() {
    $('#menu-burger').click(function () {
       $('html').toggleClass('main-menu-open')
    })
 }
+
 function oneItemSlider() {
    $('.initialize-slider').slick({
       infinite: true,
@@ -24,8 +21,26 @@ function oneItemSlider() {
       vertical: false,
       arrows: false,
       dots: true,
-      customPaging : function(slider, i) {
+      customPaging: function (slider, i) {
          return '<a>' + '</a>';
       }
    });
+}
+
+function playAboutVideo() {
+   $('#about__video-play').click(function (e) {
+      e.preventDefault()
+
+      let elem = document.getElementById('about__video');
+      if (elem.requestFullscreen) {
+         elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+         elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+         elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+         elem.msRequestFullscreen();
+      }
+   })
+
 }
