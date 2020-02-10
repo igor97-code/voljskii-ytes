@@ -22,12 +22,10 @@
     .choice-points-block{
         position: relative;
         display: block;
-        width: 343px;
         overflow: hidden;
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center top;
-        width:424px;
         margin :12px 0;
         &:before{
             content: " ";
