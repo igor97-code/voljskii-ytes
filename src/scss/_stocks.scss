@@ -1,0 +1,28 @@
+.stock__slider {
+    font-family: $fontBase;
+    .stock__right {
+        padding: 50px 60px 20px;
+        .subtitle22 {
+            margin: 0;
+            text-transform: lowercase;
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+        .stock__dates {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: $colorButton;
+            text-transform: initial;
+        }
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 178.9%;
+            letter-spacing: 0.03em;
+            color: $colorGray;
+            text-transform: initial;
+        }
+    }
+}

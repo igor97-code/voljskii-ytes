@@ -10,7 +10,8 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
