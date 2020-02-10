@@ -210,3 +210,26 @@
     display: inline-block !important;
     vertical-align: top;
 }
+
+.section.section-grey-bg {
+    background-color: $sectionGreyBg;
+}
+
+.slick-dots {
+    bottom: -60px;
+    li {
+        opacity: 0.5;
+        border: 2px solid $colorGray;
+        box-sizing: border-box;
+        border-radius: 50%;
+        transition: all 0.3s;
+        &.slick-active {
+            background: $colorButton;
+            border: 2px solid $colorButton;
+        }
+        &:hover {
+            border: 2px solid $colorButton;
+        }
+    }
+}
+

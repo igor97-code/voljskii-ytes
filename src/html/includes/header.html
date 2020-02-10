@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="favicon/manifest.json">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#544b3d">
+    <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="favicon/manifest.json" rel="manifest">
+    <link color="#544b3d" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
 
-    <link rel="stylesheet" href="css/style.bundle.css" />
+    <link href="css/style.bundle.css" rel="stylesheet"/>
 
     <title><%=title%></title>
-  </head>
-  <body>
-      <div id="header" class="header">
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="wrapper-logo">
-                    <div class="logo">
+</head>
+<body>
+<div class="header" id="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <a class="logo" href="/">
+                <img alt="logo" src="../../img/logo.png">
+            </a>
+            <div class="logo-title">
+                <a href="tel:88002002643" class="hide-desktop">
+                    <img src="../../img/others/header/phone-icon.png" alt="phone-icon">
+                </a>
+                <a href="tel:88002002643" class="hide-mobile">8 800 200 26 43</a>
+                <p class="hide-mobile">Самарская обл., Шигонский р-н,<br> пос. «Волжский Утёс»</p>
+            </div>
 
-                    </div>
-                    <div class="logo-title">
-                        <h2>8 800 200 26 43</h2>
-                        <p>Самарская обл., Шигонский р-н,<br> пос. «Волжский Утёс»</p>
-                    </div>
-                </div>
-                <div class="header_menu">
+            <div class="header__burger" id="menu-burger">
 
-                </div>
             </div>
         </div>
-      </div>
+    </div>
+</div>
+<nav class="header__main-menu">
+    <ul>
+        <li>
+            <a href="/">Санаторий</a>
+        </li>
+        <li>
+            <a href="/">Лечебные программы</a>
+        </li>
+        <li>
+            <a href="/">Лечение</a>
+        </li>
+        <li>
+            <a href="/">Размещение</a>
+        </li>
+        <li>
+            <a href="/">Чем заняться</a>
+        </li>
+        <li>
+            <a href="/">Рестораны</a>
+        </li>
+        <li>
+            <a href="/">Спа-центр</a>
+        </li>
+        <li>
+            <a href="/">Контакты</a>
+        </li>
+    </ul>
+    <a href="/" class="header__main-menu-bottom">
+        <img alt="logo2" src="../../img/others/header/header-bottom-logo.png">
+        <span>Управление делами Президента РФ</span>
+    </a>
+</nav>
 
-      <div class="body">
-        <div class="header-margin"></div>
+<div class="body">
+    <div class="header-margin"></div>

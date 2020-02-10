@@ -40,6 +40,9 @@
 //кнопки.
 @import '_buttons';
 
+//Акции.
+@import '_stocks';
+
 //Преимущества.
 @import '_advantages';
 
@@ -51,3 +54,9 @@
 
 //Блок с отправкой вопроса.
 @import '_question';
+
+
+//Slick слайдер(стили).
+@import '../../node_modules/slick-carousel/slick/slick.css';
+@import '../../node_modules/slick-carousel/slick/slick-theme.css';
+

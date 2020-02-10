@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../scss/_typographic.scss"><% var data = {
+<% var data = {
 title: "Волжский утес"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
@@ -12,7 +12,6 @@ title: "Волжский утес"
                     <h1 class="text-align-center m-b-0">Санаторий «Волжский Утёс»</h1>
                     <p class="text-align-center color-main m-t-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Curabitur<br> porttitor quis metus nec tincidunt.</p>
-
                 </div>
             </div>
         </div>
@@ -21,7 +20,7 @@ title: "Волжский утес"
         <div class="container">
             <h2 class="text-align-center m-t-0">Услуги санатория</h2>
             <div class="choice-points">
-                <div class="item">программы </div>
+                <div class="item">программы</div>
                 <div class="item">лечение</div>
                 <div class="item">размещение</div>
                 <div class="item">чем заняться</div>
@@ -31,27 +30,80 @@ title: "Волжский утес"
             </div>
             <div class="points-blocks">
                 <div class="row">
-                    <div class="col w-33 w-33-tablet"><div class="choice-points-block b1i1"></div></div>
-                    <div class="col w-33 w-33-tablet"><div class="choice-points-block b1i2"></div></div>
+                    <div class="col w-33">
+                        <div class="choice-points-block b1i1"></div>
+                    </div>
+                    <div class="col w-33">
+                        <div class="choice-points-block b1i2"></div>
+                    </div>
                     <div class="clr"></div>
-                    <div class="col w-33 w-33-tablet"><div class="choice-points-block b1i3"></div></div>
-                    <div class="col w-33 w-33-tablet"><div class="choice-points-block b1i4"></div></div>
+                    <div class="col w-33">
+                        <div class="choice-points-block b1i3"></div>
+                    </div>
+                    <div class="col w-33">
+                        <div class="choice-points-block b1i4"></div>
+                    </div>
                     <div class="clr"></div>
-                    <div class="col w-33 w-33-tablet"><div class="choice-points-block b1i5"></div></div>
-                    <div class="col w-33 w-33-tablet"><div class="choice-points-block b1i6"></div></div>
+                    <div class="col w-33">
+                        <div class="choice-points-block b1i5"></div>
+                    </div>
+                    <div class="col w-33">
+                        <div class="choice-points-block b1i6"></div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="button all-programms m-t-50">
-                    <a href="#">Все программы</a>
+                <a class="button m-t-50" href="#">Все программы</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-grey-bg">
+        <div class="container">
+            <h2 class="text-align-center m-t-0">Акции</h2>
+
+            <div class="stock__slider initialize-slider">
+                <div class="stock__slider-item">
+                    <div class="row">
+                        <div class="col w-50">
+                            <img alt="stock-1" src="../../img/others/stock/stock-img-1.png">
+                        </div>
+                        <div class="col w-50 stock__right">
+                            <h4 class="subtitle22">Народный санаторий</h4>
+                            <span class="stock__dates">заезды с 09.01.2020 по 31.05.2020.</span>
+                            <p>
+                                При условии пребывания не менее 7 дней. Размещение во 2 корпусе. Лечение по программе "Стандарт". В стоимость входит: проживание, 3-разовое питание, лечение по
+                                назначению врача (от 7 дней пребывания), бассейн.
+                            </p>
+                            <a class="button" href="#">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock__slider-item">
+                    <div class="row">
+                        <div class="col w-50">
+                            <img alt="stock-1" src="../../img/others/stock/stock-img-1.png">
+                        </div>
+                        <div class="col w-50 stock__right">
+                            <h4 class="subtitle22">Народный санаторий</h4>
+                            <span class="stock__dates">заезды с 09.01.2020 по 31.05.2020.</span>
+                            <p>
+                                При условии пребывания не менее 7 дней. Размещение во 2 корпусе. Лечение по программе "Стандарт". В стоимость входит: проживание, 3-разовое питание, лечение по
+                                назначению врача (от 7 дней пребывания), бассейн.
+                            </p>
+                            <a class="button" href="#">подробнее</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="section p-all-0 m-t-0">
         <div class="container">
             <h2 class="text-align-center m-b-5">Преимущества</h2>
             <p class="text-align-center m-t-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur <br>porttitor quis metus nec tincidunt.</p>
+
             <div class="advantage-wrapper">
                 <div class="w-60 col0"><div class="advantage advantage1"></div> </div>
                 <div class="w-40 p-right col1">
@@ -66,6 +118,7 @@ title: "Волжский утес"
             <div class="advantage-wrapper">
                 <div class="w-60 col2"><div class="advantage advantage2"></div> </div>
                 <div class="w-40 p-left col3">
+
                             <div class="cell">
                                 <h3> Лучшие врачи</h3>
                                 <p class="medium-text">При условии пребывания не менее 7 дней. Размещение во 2 корпусе. Лечение по программе "Стандарт". В стоимость входит: проживание,
@@ -91,19 +144,20 @@ title: "Волжский утес"
     </div>
     <div class="section p-b-0">
         <div class="main-video">
-            <video id="main_video"  loop="true"  width="100%">
+            <video id="main_video" loop="true" width="100%">
                 <source src="http://www.volgacliff.ru/wp-content/themes/nadezhda/app/video/video.mp4" type='video/mp4'>
-
             </video>
-            <!--<div class="video-text">
-                <h2 class="text-align-center">
-                    Видео о санатории
-                </h2>
-                <p class="text-align-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor quis metus nec tincidunt.
-                </p>
-            </div>-->
-        </di>
+
+            <!-- <div class="video-text">
+                 <h2 class="text-align-center">
+                     Видео о санатории
+                 </h2>
+                 <p class="text-align-center">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor quis metus nec tincidunt.
+                 </p>
+             </div>-->
+        </div>
+
 
     </div>
     <div class="section">
@@ -111,42 +165,20 @@ title: "Волжский утес"
             <h2 class="text-align-center m-t-10 m-b-10">Наши гости о нас</h2>
             <p class="text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur<br> porttitor quis metus nec tincidunt.</p>
             <div class="swiper-slider-wrapper infographic-slider">
-                <div id="infographic_slider" class="swiper-slider m-t-100">
+                <div class="swiper-slider m-t-100" id="infographic_slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="infographic">
                                 <div class="item">
                                     <div class="item-image">
-                                        <img src="../../img/others/guests.png" alt="">
+                                        <img alt="" src="../../img/others/guests.png">
                                     </div>
                                     <div class="stars">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                    </div>
-                                        <p class="big-weight">Дингуатова Г.У., Потатуева Н.П., Евдокимова З.Л.</p>
-                                        <p class="medium-text">В санатории Волжский утёс отдыхаем с 2012 г. Очень благодарны за качество обслуживания и комфорт. За столько лет
-                                            прибывания у нас сложилось определенное мнение о санатории. Мы считаем его самым лучшим санаторием в России. Он
-                                            соответствует всем требованиям санаторно-курортного о...</p>
-                                    <p class="medium-text color-btn">подробнее</p>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="infographic">
-                                <div class="item">
-                                    <div class="item-image">
-                                        <img src="../../img/others/guests.png" alt="">
-                                    </div>
-                                    <div class="stars">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
                                     </div>
                                     <p class="big-weight">Дингуатова Г.У., Потатуева Н.П., Евдокимова З.Л.</p>
                                     <p class="medium-text">В санатории Волжский утёс отдыхаем с 2012 г. Очень благодарны за качество обслуживания и комфорт. За столько лет
@@ -161,14 +193,14 @@ title: "Волжский утес"
                             <div class="infographic">
                                 <div class="item">
                                     <div class="item-image">
-                                        <img src="../../img/others/guests.png" alt="">
+                                        <img alt="" src="../../img/others/guests.png">
                                     </div>
                                     <div class="stars">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
                                     </div>
                                     <p class="big-weight">Дингуатова Г.У., Потатуева Н.П., Евдокимова З.Л.</p>
                                     <p class="medium-text">В санатории Волжский утёс отдыхаем с 2012 г. Очень благодарны за качество обслуживания и комфорт. За столько лет
@@ -183,14 +215,14 @@ title: "Волжский утес"
                             <div class="infographic">
                                 <div class="item">
                                     <div class="item-image">
-                                        <img src="../../img/others/guests.png" alt="">
+                                        <img alt="" src="../../img/others/guests.png">
                                     </div>
                                     <div class="stars">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
                                     </div>
                                     <p class="big-weight">Дингуатова Г.У., Потатуева Н.П., Евдокимова З.Л.</p>
                                     <p class="medium-text">В санатории Волжский утёс отдыхаем с 2012 г. Очень благодарны за качество обслуживания и комфорт. За столько лет
@@ -205,14 +237,14 @@ title: "Волжский утес"
                             <div class="infographic">
                                 <div class="item">
                                     <div class="item-image">
-                                        <img src="../../img/others/guests.png" alt="">
+                                        <img alt="" src="../../img/others/guests.png">
                                     </div>
                                     <div class="stars">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
                                     </div>
                                     <p class="big-weight">Дингуатова Г.У., Потатуева Н.П., Евдокимова З.Л.</p>
                                     <p class="medium-text">В санатории Волжский утёс отдыхаем с 2012 г. Очень благодарны за качество обслуживания и комфорт. За столько лет
@@ -227,14 +259,36 @@ title: "Волжский утес"
                             <div class="infographic">
                                 <div class="item">
                                     <div class="item-image">
-                                        <img src="../../img/others/guests.png" alt="">
+                                        <img alt="" src="../../img/others/guests.png">
                                     </div>
                                     <div class="stars">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
-                                        <img src="../../img/others/quest-stars.png" alt="">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                    </div>
+                                    <p class="big-weight">Дингуатова Г.У., Потатуева Н.П., Евдокимова З.Л.</p>
+                                    <p class="medium-text">В санатории Волжский утёс отдыхаем с 2012 г. Очень благодарны за качество обслуживания и комфорт. За столько лет
+                                        прибывания у нас сложилось определенное мнение о санатории. Мы считаем его самым лучшим санаторием в России. Он
+                                        соответствует всем требованиям санаторно-курортного о...</p>
+                                    <p class="medium-text color-btn">подробнее</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="infographic">
+                                <div class="item">
+                                    <div class="item-image">
+                                        <img alt="" src="../../img/others/guests.png">
+                                    </div>
+                                    <div class="stars">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
+                                        <img alt="" src="../../img/others/quest-stars.png">
                                     </div>
                                     <p class="big-weight">Дингуатова Г.У., Потатуева Н.П., Евдокимова З.Л.</p>
                                     <p class="medium-text">В санатории Волжский утёс отдыхаем с 2012 г. Очень благодарны за качество обслуживания и комфорт. За столько лет
@@ -266,7 +320,10 @@ title: "Волжский утес"
         </div>
     </div>
     <div class="section p-all-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d304492.5463571514!2d49.0518532546267!3d53.39965853819026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9bb6a1a0c13e05!2z0JLQvtC70LbRgdC60LjQuSDQo9GC0LXRgQ!5e0!3m2!1sru!2sru!4v1581242554602!5m2!1sru!2sru" width="100%" height="582px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe allowfullscreen=""
+                frameborder="0" height="582px"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d304492.5463571514!2d49.0518532546267!3d53.39965853819026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9bb6a1a0c13e05!2z0JLQvtC70LbRgdC60LjQuSDQo9GC0LXRgQ!5e0!3m2!1sru!2sru!4v1581242554602!5m2!1sru!2sru"
+                style="border:0;" width="100%"></iframe>
 
     </div>
     <div class="section p-t-0 p-b-10">
@@ -284,7 +341,7 @@ title: "Волжский утес"
                         </h2>
                         <p class="text-align-center">
                             О Вашем лечении и отдыхе. Свяжитесь с нами и наши
-                             специалисты ответят вам в ближайшее время
+                            специалисты ответят вам в ближайшее время
                         </p>
                         <div class="row">
                             <label class="phone">
@@ -299,9 +356,9 @@ title: "Волжский утес"
                             </label>
                         </div>
                         <div class="row">
-                            <div class="button send ">
+                            <a class="button">
                                 Отправить
-                            </div>
+                            </a>
                         </div>
                         <p class="medium-text">
                             Нажимая кнопку «Отправить» вы соглашаетесь с нашей<br> <span>политикой конфиденциальности</span>
@@ -312,6 +369,7 @@ title: "Волжский утес"
             </div>
         </div>
     </div>
+
 </div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
