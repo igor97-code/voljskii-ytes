@@ -59,22 +59,9 @@
     background-repeat: no-repeat;
   }
   .header__burger {
-    margin-left: auto;
-    cursor: pointer;
-    /*&:before, &:after {
-      display: block;
-      content: '';
-      width: 42px;
-      height: 3px;
-      background: #000;
-      transition: 0.5s ease;
-    }
-    &:before {
-      transform: translateY(6px);
-    }
-    &:after {
-      transform: translateY(-6px);
-    }*/
+      margin-left: auto;
+      cursor: pointer;
+      position: relative;
       .line {
           display: block;
           position: absolute;
@@ -190,12 +177,6 @@
 .main-menu-open {
   .header {
     .header__burger {
-     /* &:before {
-        transform: translateY(3px) rotate(45deg);
-      }
-      &:after {
-        transform: translateY(0)  rotate(-45deg);
-      }*/
         .line.line-top {
             z-index: 4;
             -webkit-transform: rotate(45deg);
