@@ -1,0 +1,80 @@
+.position{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center top;
+    width:680px;
+  background-image: url(../../img/others/position.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+    &:before{
+      content: " ";
+      display: block;
+      float: left;
+      margin: 0;
+      padding-top: 76%;
+    }
+}
+.question-iputs{
+  padding:41px 105px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  .phone{
+    width: 100%;
+    position: relative;
+    span{
+      position: absolute;
+      color:$colorGray;
+      top: -15px;
+      left: 14px;
+
+    }
+    input{
+      margin-top:20px;
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      padding:5px 10px
+    }
+  }
+  .label-quest{
+    position: relative;
+    input{
+      margin-top: 20px;
+      width: 100%;
+      height: 83px;
+      font-size: 16px;
+      padding: 5px 10px
+    }
+    span{
+      font-weight: 500;
+      font-size: 16px;
+      position: absolute;
+      top: -29px;
+      left: 14px;
+      color:$colorText;
+    }
+  }
+  p{
+    line-height: 25px !important;
+    letter-spacing: 0.03em;
+    span{
+      color:deepskyblue;
+    }
+  }
+}
+.question{
+  position: relative;
+  top:-35px;
+  .col{
+    padding:0;
+    margin:0;
+  }
+  .block-inputs{
+    position: relative;
+    top:-35px
+  }
+}
