@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom:100px;
+  &:last-child {
+    margin-bottom: 10px;
+  }
   .col0{
     order:1;
   }

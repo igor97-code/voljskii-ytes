@@ -12,10 +12,11 @@
         transition: 0.3s linear;
         cursor: pointer;
         margin: 0 7px;
-        &:hover {
+        &:hover, &.active {
             background-color: $colorPurple;
             color:$colorMain;
         }
+
     }
     .item-active{
 
