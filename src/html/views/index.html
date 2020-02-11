@@ -282,7 +282,7 @@ title: "Волжский утес"
                     </div>
                 </div>
                 <div class="col w-50 block-inputs">
-                    <div class="question-iputs">
+                    <div id="feedback_form" class="question-iputs">
                         <h2 class="text-align-center m-t-0 m-b-0">
                             Задайте вопрос
                         </h2>
@@ -290,23 +290,25 @@ title: "Волжский утес"
                             О Вашем лечении и отдыхе. Свяжитесь с нами и наши
                             специалисты ответят вам в ближайшее время
                         </p>
-                        <div class="row">
-                            <label class="phone">
-                                <span>Мобильный телефон</span>
-                                <input>
-                            </label>
-                        </div>
-                        <div class="row">
-                            <label class="label-quest">
-                                <span> Ваш вопрос </span>
-                                <input type="text">
-                            </label>
-                        </div>
-                        <div class="row">
-                            <a class="button">
-                                Отправить
-                            </a>
-                        </div>
+                        <label class="field">
+                            <input type="text" class="input-text placeholder validate input-mask"
+                                   data-mask_tpl="phone_plus7" data-validate="mobile_phone" data-placeholder="Мобильный телефон"
+                                   value="" name="feedback_phone" id="feedback_phone"
+                                   autocomplete="off" autocorrect="off" autocapitalize="none">
+                            <p class="error-message"></p>
+                        </label>
+
+                        <label class="field">
+                            <textarea name="feedback_text" id="feedback_text"
+                                      class="textarea placeholder validate"
+                                      data-validate="required" data-placeholder="Ваш вопрос"></textarea>
+                            <p class="error-message"></p>
+                        </label>
+
+                        <button type="submit" class="button">
+                            Отправить
+                        </button>
+
                         <p class="medium-text">
                             Нажимая кнопку «Отправить» вы соглашаетесь с нашей<br> <span>политикой конфиденциальности</span>
                             и <span>обработкой персональных данных.</span>

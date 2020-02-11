@@ -10,6 +10,7 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
+    "inputmask": "^5.0.3",
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1"
   },
