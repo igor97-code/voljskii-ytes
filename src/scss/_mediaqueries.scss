@@ -2,9 +2,16 @@ $mobile: 759px;
 $mobileLandscape: 1000px;
 $tablet: 760px;
 $desktop: 1000px;
+$desktop-small: 1200px;
 
 @mixin desktop  {
     @media (min-width: #{$desktop}) {
+        @content;
+    }
+};
+
+@mixin desktop-small  {
+    @media (min-width: #{$desktop}) and (max-width: #{$desktop-small}) {
         @content;
     }
 };
@@ -27,5 +34,6 @@ $desktop: 1000px;
 @mixin tablet-mobile {
     @media (max-width: #{$desktop}) {
         @content;
+
     }
 }

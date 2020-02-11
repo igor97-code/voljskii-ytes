@@ -12,10 +12,14 @@
     background-position: center center;
     padding: 190px 75px;
     h2 {
-      margin: 0;
+        margin: 0;
+        font-size: 35px;
     }
     p {
       color: $colorMain;
+    }
+    @include desktop-small{
+        padding: 100px 20px;
     }
 }
 .question-iputs{
@@ -76,4 +80,12 @@
     position: relative;
     top:-35px
   }
+    @include desktop-small{
+        .col.w-50 {
+            width: 40%;
+        }
+        .col.w-50.block-inputs {
+            width: 60%;
+        }
+    }
 }

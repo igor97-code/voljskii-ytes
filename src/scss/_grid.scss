@@ -10,6 +10,11 @@
         float: left;
         padding: 0 10px;
         width: 100%;
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
         @include mobile {
             float: none;
             width: 100% !important;

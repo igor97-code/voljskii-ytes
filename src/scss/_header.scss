@@ -116,7 +116,22 @@
           -ms-transform: translateY(0);
           transform: translateY(0);
       }
-  }
+    }
+    @include desktop-small{
+
+    }
+    @include tablet-mobile{
+        .logo-title {
+            margin-left: auto;
+            margin-right: 20%;
+            a:after {
+                display: none;
+            }
+        }
+        .header__burger {
+            margin-left: 0;
+        }
+    }
 }
 
 .header__main-menu {
@@ -235,5 +250,6 @@
           transition: opacity 2s linear;
       }
   }
-
 }
+
+

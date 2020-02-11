@@ -37,6 +37,15 @@
   .p-right{
     padding-right:9%;
   }
+  @include desktop-small{
+    margin-bottom: 50px;
+    .w-40{
+      width:50%;
+    }
+    .w-60{
+      width: 50%;
+    }
+  }
   @include mobile {
     .w-40{
       width:100%;

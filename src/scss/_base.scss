@@ -55,4 +55,7 @@ body {
 #map {
     width: 100%;
     min-height: 582px;
+    @include desktop-small{
+        min-height: 355px;
+    }
 }

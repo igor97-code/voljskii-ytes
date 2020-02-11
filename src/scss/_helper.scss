@@ -237,6 +237,9 @@
             border: 2px solid $colorButton;
         }
     }
+    @include desktop-small{
+        bottom: -44px;
+    }
 }
 .slick-loading .slick-list
 {
