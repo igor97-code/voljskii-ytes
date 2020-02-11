@@ -337,37 +337,56 @@
 }
 
 .slider-guests{
-    .quest-slider {
-        .slick-current {
-            .item {
-                padding: 0 50px;
-            }
+    .quest-slider  {
+        .slick-slide {
+            margin: 0 30px;
         }
         .item {
             position: relative;
+            margin-top: 40px;
+            background: #FFFFFF;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            padding: 58px 40px 20px;
+            margin-bottom: 6px;
+            p {
+                letter-spacing: 0.03em;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 178.9%;
+            }
+        }
+        .slick-slider .slick-list {
+            padding: 0 100px;
+
         }
     }
-    /*.swiper-slide{
-        width:576px;
-        position: relative;
-    }
-    .swiper-wrapper {
-        display: flex;
-    }
-    .swiper-slide{
-        padding:0 50px 25px 50px;
-        margin-left:50px;
-        flex-shrink: 0;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 3px;
-    }*/
     .item-image{
         position: absolute;
         top: -40px;
     }
+    .quest__more-link {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.5em;
+        text-decoration: none;
+        font-weight: 400;
+        &:after {
+            width: 0;
+            display: block;
+            content: '';
+            background: $colorButton;
+            height: 1px;
+            transition: 0.4s linear;
+        }
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+        }
+    }
     .stars{
         display: flex;
-        margin-top: 58px;
         >img{
             display: block;
             margin-right:6px

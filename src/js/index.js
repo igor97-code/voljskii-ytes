@@ -30,9 +30,8 @@ function oneItemSlider() {
 function visibleAroundSlider() {
    $('.quest-slider').slick({
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
-      vertical: false,
       arrows: false,
       dots: true,
       centerMode: true,

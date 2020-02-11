@@ -196,15 +196,15 @@
             transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
         }
         .crust.crust-top {
-            -webkit-transform: translateY(3px);
-            -ms-transform: translateY(3px);
-            transform: translateY(3px);
+            -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+            transform: translateY(5px);
         }
         .crust.crust-bottom {
             bottom: 20px;
-            transform: translateY(0);
-            -ms-transform: translateY(0);
-            -webkit-transform: translateY(0);
+            transform: translateY(2px);
+            -ms-transform: translateY(2px);
+            -webkit-transform: translateY(2px);
         }
     }
   }
