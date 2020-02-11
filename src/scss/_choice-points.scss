@@ -31,7 +31,6 @@
         flex-direction: column;
         justify-content: flex-end;
         margin :12px 0;
-        padding-left: 20px;
         &:before{
             content: " ";
             display: block;
@@ -39,6 +38,7 @@
             margin: 0;
             padding-top: 35%;
         }
+
         &:hover {
             img {
                 transform: scale(1.1);
@@ -53,22 +53,38 @@
             object-fit: cover;
             transition: 0.4s linear;
         }
-        h4 {
-            position: relative;
-            color: $colorMain;
-            letter-spacing: 0.03em;
-            margin-bottom: 5px;
-        }
-        span {
-            display: inline-block;
-            position: relative;
-            font-family: $fontBase;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            color: #FFFFFF;
-            margin-bottom: 16px;
+        .info {
+            padding-left: 20px;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 70%;
+                background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+                background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
+                background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
+                background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
+            }
+            h4 {
+                position: relative;
+                color: $colorMain;
+                letter-spacing: 0.03em;
+                margin-bottom: 5px;
+            }
+            span {
+                display: inline-block;
+                position: relative;
+                font-family: $fontBase;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: #FFFFFF;
+                margin-bottom: 16px;
+            }
         }
     }
 

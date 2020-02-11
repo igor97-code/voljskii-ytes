@@ -138,6 +138,8 @@
     list-style: none;
     padding-left: 0;
     margin-bottom: 70px;
+    transition: opacity 2s linear;
+    opacity: 0;
     li {
       width: 100%;
       text-align: center;
@@ -167,7 +169,9 @@
     letter-spacing: 0.03em;
     color: #000000;
     text-decoration: none;
-    span {
+    transition: opacity 2s linear;
+    opacity: 0;
+      span {
       display: inline-block;
       width: 100%;
     }
@@ -209,7 +213,16 @@
     }
   }
   .header__main-menu {
-    transform: translateY(0);
+      overflow-y: scroll;
+      transform: translateY(0);
+      padding-bottom: 50px;
+      &::-webkit-scrollbar { width: 0; }
+      & { -ms-overflow-style: none; }
+      & { overflow: -moz-scrollbars-none; }
+      ul, &-bottom {
+          opacity: 1;
+          transition: opacity 2s linear;
+      }
   }
 
 }
