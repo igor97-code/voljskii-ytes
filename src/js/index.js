@@ -86,21 +86,13 @@ function initFeedbackForm($form) {
       validateField($(this));
    });
 
-   $form.on('click', 'button', function () {
+   $form.on('submit', function () {
       if (validateForm($form)) {
-         // send();
+         send();
       }
+
+      return false;
    });
-
-   // $form.on('submit', function () {
-   //    if (validateForm($form)) {
-   //       send();
-   //    }
-   //
-   //    return false;
-   // });
-
-
 
    function send() {
       const data = $form.serialize();
