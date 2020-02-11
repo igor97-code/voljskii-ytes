@@ -49,6 +49,27 @@
               </div>
           </div>
       </div>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=748aff90-d672-406b-a5c9-3cab949b926a&lang=ru_RU"></script>
+      <script>
+
+
+         ymaps.ready(function () {
+            var myMap = new ymaps.Map("map", {
+               center: [53.38013374866902,49.088951521911824],
+               zoom: 10,
+               controls: []
+            });
+            myPlacemark = new ymaps.Placemark([53.38013374866902,49.088951521911824], {}, {
+               iconLayout: 'default#image',
+               iconImageHref: "../../img/others/map-icon.png",
+               iconImageSize: [41, 46],
+            });
+            myMap.geoObjects
+               .add(myPlacemark)
+         });
+
+
+      </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

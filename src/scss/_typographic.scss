@@ -7,7 +7,15 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
-
+    .custom-link {
+        text-decoration: none;
+        color: $colorLink;
+        display: inline-block;
+        transition: 0.5s linear;
+        &:hover {
+            color: darken($colorLink, 10%)
+        }
+    }
     &.gray {
         background: $colorGray;
     }

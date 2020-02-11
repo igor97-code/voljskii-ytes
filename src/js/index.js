@@ -9,6 +9,8 @@ import {
     getMaskedInputValue
 } from './components/form';
 
+import {initTabs} from './components/tabs'
+
 
 $(function () {
     toggleMainMenu();
@@ -22,6 +24,12 @@ $(function () {
     initMaskedInput();
 
     initFeedbackForm($('#feedback_form'));
+
+   if ($('[data-tabs-block]').length) {
+      $(this).each(function () {
+         initTabs($(this));
+      })
+   }
 });
 
 function toggleMainMenu() {

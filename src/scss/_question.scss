@@ -6,10 +6,10 @@
     background-repeat: no-repeat;
     background-position:center top;
     width:680px;
-  background-image: url(../../img/others/position.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+    background-image: url(../../img/others/position.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
     &:before{
       content: " ";
       display: block;
@@ -19,9 +19,9 @@
     }
 }
 .question-iputs{
-  padding:41px 105px;
+  padding:41px 80px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   .phone{
     width: 100%;
     position: relative;
@@ -30,7 +30,6 @@
       color:$colorGray;
       top: -15px;
       left: 14px;
-
     }
     input{
       margin-top:20px;
