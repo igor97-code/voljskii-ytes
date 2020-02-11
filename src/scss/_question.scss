@@ -1,21 +1,21 @@
 .position{
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     overflow: hidden;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center top;
-    width:680px;
     background-image: url(../../img/others/position.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
-    &:before{
-      content: " ";
-      display: block;
-      float: left;
+    background-position: center center;
+    padding: 190px 75px;
+    h2 {
       margin: 0;
-      padding-top: 76%;
+    }
+    p {
+      color: $colorMain;
     }
 }
 .question-iputs{
