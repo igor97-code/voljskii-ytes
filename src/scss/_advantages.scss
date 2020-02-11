@@ -114,7 +114,10 @@
     }
     .p-left{
       padding-left:0;
-      margin-bottom: 25px;
+      margin-bottom: 0;
+      h3 {
+        margin: 0;
+      }
     }
     .p-right{
       padding-right:0;
@@ -143,6 +146,20 @@
   @for $i from 1 through 3{
     &.advantage#{$i}{
       background-image:  url(../../img/others/advantages/advantage#{$i}.png);
+    }
+  }
+  @include tablet-mobile{
+    -webkit-background-size: contain;
+    background-size: contain;
+    &:before {
+      padding-top: 50%;
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .p-left {
+      margin-bottom: 0;
     }
   }
 }

@@ -10,6 +10,9 @@
     @include desktop-small{
         padding-bottom: 60px;
     }
+    @include tablet-mobile{
+        padding-bottom: 40px;
+    }
     .custom-link {
         text-decoration: none;
         color: $colorLink;
@@ -94,6 +97,10 @@
         @include desktop-small{
             font-weight: 700;
             font-size: 20px;
+        }
+        @include tablet-mobile{
+            font-weight: 700;
+            font-size: 18px;
         }
     }
     p {

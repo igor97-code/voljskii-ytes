@@ -19,4 +19,9 @@
   &:hover {
     background: darken($colorButton, 10%);
   }
+  @include tablet-mobile{
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 10px 0;
+  }
 }

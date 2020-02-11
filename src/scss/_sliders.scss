@@ -99,4 +99,12 @@
             width: 75%;
         }
     }
+    @include tablet-mobile {
+        .quest-slider {
+            width: 90%;
+            .slick-dots {
+                bottom: -60px;
+            }
+        }
+    }
 }

@@ -37,4 +37,18 @@
             }
         }
     }
+    @include tablet-mobile{
+        &.slick-dotted.slick-slider {
+            margin-bottom: 10px;
+        }
+        .col.w-50 {
+            width: 40% !important;
+            float: left;
+            &.stock__right {
+                width: 60% !important;
+                padding: 0 20px;
+            }
+        }
+
+    }
 }

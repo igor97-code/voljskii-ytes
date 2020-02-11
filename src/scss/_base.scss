@@ -37,25 +37,27 @@ body {
     margin: 0 auto;
     padding: 1px 15px;
     max-width: 1370px;
-
     &.relative{
         position: relative;
         z-index: 2;
     }
-
     &.fullscreen {
         max-width: 100%;
     }
-
     &.small{
         max-width: 490px;
     }
-
+    @include mobile{
+        padding: 1px 0;
+    }
 }
 #map {
     width: 100%;
     min-height: 582px;
     @include desktop-small{
+        min-height: 355px;
+    }
+    @include tablet-mobile {
         min-height: 355px;
     }
 }

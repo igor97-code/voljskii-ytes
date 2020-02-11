@@ -34,6 +34,5 @@ $desktop-small: 1200px;
 @mixin tablet-mobile {
     @media (max-width: #{$desktop}) {
         @content;
-
     }
 }

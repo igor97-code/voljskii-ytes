@@ -21,6 +21,7 @@
     .item-active{
 
     }
+
 }
 .points-blocks{
     margin:0 auto;
@@ -91,5 +92,11 @@
 
     .clr{
         display: none;
+    }
+    @include tablet-mobile{
+        .col.w-33 {
+            width: 50% !important;
+            float: left;
+        }
     }
 }

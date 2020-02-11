@@ -59,4 +59,7 @@
   @include desktop-small{
     padding: 70px 0;
   }
+  @include tablet-mobile {
+    padding: 30px 0 40px;
+  }
 }

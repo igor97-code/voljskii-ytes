@@ -11,6 +11,9 @@
     @include desktop {
         display: none !important;
     }
+    @include tablet {
+        display: none !important;
+    }
 }
 @include desktop {
 }
@@ -239,6 +242,9 @@
     }
     @include desktop-small{
         bottom: -44px;
+    }
+    @include tablet-mobile{
+        bottom: -25px;
     }
 }
 .slick-loading .slick-list
