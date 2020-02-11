@@ -54,10 +54,10 @@
       width:100%;
     }
     .col0{
-      order:1;
+      order:0;
     }
     .col1{
-      order:0;
+      order:1;
     }
     .col2{
       order:2;
@@ -90,9 +90,24 @@
   @include tablet-mobile{
     .w-40{
       width:100%;
+      padding: 0 40px !important;
+      h3 {
+        margin: 0;
+        font-size: 26px;
+        line-height: 31px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 178.9%;
+      }
     }
     .w-60{
       width:100%;
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
     }
     .col0{
       order:1;
@@ -125,6 +140,20 @@
     }
     margin-bottom:0;
   }
+  @include mobile{
+    .w-40{
+      padding: 0 5px!important;
+      h3 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 31px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 178.9%;
+      }
+    }
+  }
 }
 
 .advantage{
@@ -143,10 +172,10 @@
     margin: 0;
     padding-top: 61%;
   }
-  @for $i from 1 through 3{
-    &.advantage#{$i}{
-      background-image:  url(../../img/others/advantages/advantage#{$i}.png);
-    }
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   @include tablet-mobile{
     -webkit-background-size: contain;
@@ -160,6 +189,21 @@
     }
     .p-left {
       margin-bottom: 0;
+    }
+    img {
+      width: 80%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  @include mobile{
+    .p-left {
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
   }
 }

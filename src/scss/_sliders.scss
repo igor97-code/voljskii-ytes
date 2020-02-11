@@ -107,4 +107,38 @@
             }
         }
     }
+    @include mobile {
+        .slider__wrapper {
+            &:before, &:after {
+                display: none;
+            }
+        }
+        .quest-slider {
+            width: 100%;
+            .item {
+                padding: 58px 10px 20px;
+                .big-weight {
+                    font-size: 14px;
+                    line-height: 139.5%;
+                }
+                .medium-text {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                .quest__more-link {
+                    font-size: 14px;
+                    line-height: 178.9%;
+                }
+            }
+            .slick-dots {
+                bottom: -60px;
+            }
+            .slick-slide {
+                margin: 0;
+            }
+            .slick-list {
+                padding: 0 !important;
+            }
+        }
+    }
 }

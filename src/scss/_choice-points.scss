@@ -12,14 +12,19 @@
         transition: 0.3s linear;
         cursor: pointer;
         margin: 0 7px;
+        font-size: 11px;
+        margin-bottom: 10px;
         &:hover, &.active {
             background-color: $colorPurple;
             color:$colorMain;
         }
 
     }
-    .item-active{
-
+    @include mobile{
+        margin-bottom: 15px;
+        .item{
+            margin: 0 4px 10px;
+        }
     }
 
 }
@@ -99,4 +104,24 @@
             float: left;
         }
     }
+    @include mobile{
+        .choice-points-block {
+            min-height: 175px;
+            .info {
+                padding-left: 6px;
+                h4 {
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        & ~ .row .button {
+            margin-top: 20px !important;
+        }
+    }
+
 }

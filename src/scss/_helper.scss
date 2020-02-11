@@ -246,6 +246,12 @@
     @include tablet-mobile{
         bottom: -25px;
     }
+    @include mobile{
+        li {
+            width: 18px;
+            height: 18px;
+        }
+    }
 }
 .slick-loading .slick-list
 {

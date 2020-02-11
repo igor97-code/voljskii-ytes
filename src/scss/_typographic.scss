@@ -74,6 +74,10 @@
         @include desktop-small{
             margin: 40px 0;
         }
+        @include mobile{
+            font-size: 32px;
+            margin: 25px 0;
+        }
     }
     h3{
         font-size: 32px;
@@ -145,6 +149,9 @@
 
         &:last-child {
             margin-bottom: 0;
+        }
+        @include mobile{
+            font-size: 14px;
         }
     }
 
