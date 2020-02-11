@@ -57,7 +57,7 @@ function oneItemSlider() {
 function visibleAroundSlider() {
    $('.quest-slider').slick({
       infinite: true,
-      slidesToShow: 2,
+      slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       dots: true,
