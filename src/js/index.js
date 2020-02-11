@@ -45,18 +45,17 @@ function oneItemSlider() {
 }
 
 function visibleAroundSlider() {
-    $('.quest-slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        vertical: false,
-        arrows: false,
-        dots: true,
-        centerMode: true,
-        customPaging: function (slider, i) {
-            return '<a>' + '</a>';
-        }
-    });
+   $('.quest-slider').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      centerMode: true,
+      customPaging: function (slider, i) {
+         return '<a>' + '</a>';
+      }
+   });
 }
 
 function playAboutVideo() {
