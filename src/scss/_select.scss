@@ -1,0 +1,49 @@
+.choices {
+    width: 350px;
+    .choices__inner {
+        background: $colorMain;
+        border: 1px solid #D7D7D7;
+        box-sizing: border-box;
+        border-radius: 4px;
+        .choices__item {
+            font-family: $fontBase;
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: 0.03em;
+            color: $colorText;
+        }
+    }
+    .choices__list--dropdown {
+        .choices__item {
+            font-family: $fontBase;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            color: $colorText;
+        }
+    }
+    &[data-type*=select-one]:after {
+        content: '';
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        right: 19.5px;
+        top: 50%;
+        margin-top: -9.5px;
+    }
+    &[data-type*=select-one].is-open:after {
+        content: '';
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        right: 19.5px;
+        top: 50%;
+        margin-top: -3.5px;
+    }
+}

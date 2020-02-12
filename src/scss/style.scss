@@ -55,12 +55,24 @@
 //Слайдер
 @import 'sliders';
 
+//Галерея
+@import 'gallery';
+
 //Блок с отправкой вопроса.
 @import 'question';
 
 
 //Стили для компонента Tabs
 @import 'tabs';
+
+//Стили для Select
+@import '_select';
+
+//Стили для программ
+@import '_programs';
+
+//Стили для текстовых блоков
+@import '_text-content';
 
 
 
@@ -71,3 +83,9 @@
 
 // стили для формы бронирования
 @import 'booking';
+
+
+@import '../../node_modules/choices.js/public/assets/styles/choices.min.css';
+
+
+

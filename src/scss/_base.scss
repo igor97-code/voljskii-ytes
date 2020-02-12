@@ -31,6 +31,15 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 99;
+    .header-margin {
+        margin-top: 105px;
+    }
+}
+.gallery-slider-open {
+    .body {
+        z-index: 1000;
+        position: inherit;
+    }
 }
 
 .container {

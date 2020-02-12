@@ -1,0 +1,85 @@
+.program-table {
+    font-family: $fontBase;
+    &.hide {
+        display: none;
+    }
+    .color-info {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1;
+        align-items: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $colorText;
+        padding-left: 29px;
+        position: relative;
+        margin-bottom: 24px;
+        &:before {
+            display: block;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #00A3FF;;
+            position: absolute;
+            left: 0;
+            top: 0.5px;
+        }
+    }
+    .item {
+        background: $colorMain;
+        display: flex;
+        justify-content: flex-start;
+        padding: 16px 0;
+        margin-bottom: 5px;
+        .number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 9%;
+            span {
+                display: inline-block;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 53px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: $colorBlue;
+                &.not-number {
+                    width: 30px;
+                    height: 4px;
+                    background: $colorBlue;
+                }
+                &.text {
+                    font-weight: 800;
+                    font-size: 14px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                }
+            }
+        }
+        .desc {
+            width: 91%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            h3 {
+                width: 100%;
+                font-weight: 800;
+                font-size: 17px;
+                line-height: 23px;
+                color: $colorText;
+                margin: 0 0 5px;
+            }
+            p {
+                width: 100%;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: $colorGray;
+                margin: 0;
+            }
+        }
+    }
+}

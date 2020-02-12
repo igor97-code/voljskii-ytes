@@ -1,5 +1,7 @@
-import * as $ from 'jquery';
+import Choices from "choices.js";
+import * as $  from 'jquery';
 import 'slick-carousel';
+
 import {
     initPlaceholders,
     initMaskedInput,
@@ -13,10 +15,11 @@ import {initTabs} from './components/tabs'
 import bookingInit from './components/booking/booking';
 
 $(function () {
-   toggleMainMenu();
-   oneItemSlider();
-   playAboutVideo();
-   visibleAroundSlider();
+    gallerySliderInit()
+    toggleMainMenu();
+    oneItemSlider();
+    playAboutVideo();
+    visibleAroundSlider();
 
    // кастомные плейсхолдеры
    initPlaceholders();
@@ -26,6 +29,17 @@ $(function () {
    initFeedbackForm($('#feedback_form'));
 
    videoOptimization();
+   changeProgram();
+   if ($('#map').length) {
+      mapInit()
+   }
+
+   if ($('select.select').length) {
+      customSelectInit()
+   }
+   if ($('video').length) {
+      videoOptimization()
+   }
 
    if ($('[data-tabs-block]').length) {
       $(this).each(function () {
@@ -35,6 +49,92 @@ $(function () {
 
    bookingInit();
 });
+
+function changeProgram() {
+   $('#program-select').change(function (e) {
+      $('.program-table').each(function () {
+         if($(this).data('program') == e.target.value) {
+            $(this).removeClass('hide')
+         } else {
+            $(this).addClass('hide')
+         }
+      })
+
+   })
+}
+
+function customSelectInit() {
+   const element = document.querySelector('select.select');
+   const choices = new Choices(element, {
+      searchEnabled: false,
+      itemSelectText: '',
+   });
+}
+
+
+
+function gallerySliderInit() {
+   $('.gallery .item').click(function () {
+      $('html').addClass('gallery-slider-open');
+
+      let sliderImages = []
+
+      $('.gallery .item img').each(function (index, value) {
+         sliderImages.push(value.src)
+      })
+
+      sliderImages.map(function (value, index) {
+         $('.gallery__slider-big, .gallery__slider-small').append(
+            $('<div class="item">').append(`<img src=${value} alt=${index}>`)
+         )
+      })
+
+      $('.gallery__slider-big').slick({
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         arrows: true,
+         fade: true,
+         asNavFor: '.gallery__slider-small',
+         prevArrow: $('.gallery-prev'),
+         nextArrow: $('.gallery-next'),
+      });
+      $('.gallery__slider-small').slick({
+         infinite: false,
+         slidesToShow: 5,
+         slidesToScroll: 1,
+         asNavFor: '.gallery__slider-big',
+         dots: false,
+         arrows: false,
+         focusOnSelect: true
+      });
+
+      let slideno = $(this).data('slide');
+      $('.gallery__slider-small').slick('slickGoTo', slideno - 1);
+
+      $('.gallery__slider-close').click(function () {
+         $('.gallery__slider-big').slick('unslick')
+         $('.gallery__slider-small').slick('unslick')
+         $('html').removeClass('gallery-slider-open');
+      })
+   });
+}
+
+function mapInit() {
+   ymaps.ready(function () {
+      var myMap = new ymaps.Map("map", {
+         center: [53.38013374866902,49.088951521911824],
+         zoom: 9,
+         controls: []
+      }),
+      myPlacemark = new ymaps.Placemark([53.38013374866902,49.088951521911824], {}, {
+         iconLayout: 'default#image',
+         iconImageHref: "/img/others/map-icon.png",
+         iconImageSize: [41, 46],
+      });
+      myMap.geoObjects
+         .add(myPlacemark)
+   });
+}
 
 function toggleMainMenu() {
     $('#menu-burger').click(function () {

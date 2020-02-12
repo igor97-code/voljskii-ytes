@@ -1,0 +1,18 @@
+.text-content {
+    .item {
+        margin-bottom: 35px;
+        h3, p {
+            font-family: $fontBase;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 29px;
+            letter-spacing: 0.03em;
+            color: $colorGray;
+            margin: 0 0 5px;
+        }
+        h3 {
+            font-weight: 800;
+            color: $colorText;
+        }
+    }
+}
