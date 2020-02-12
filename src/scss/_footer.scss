@@ -70,8 +70,7 @@
   }
   .footer-attention{
     margin-top:30px;
-    background:#000000;
-    opacity: 0.2;
+    background: rgba(0, 0, 0, 0.2);
   }
   .attention-text{
     font-weight: 500;
@@ -92,5 +91,49 @@
     align-items: center;
     padding:23px 0;
   }
-
+  @include mobile {
+    .footer-logo {
+      img {
+        width: 60%;
+      }
+    }
+    .footer-number {
+      margin-top: 15px;
+      a {
+        font-size: 34px;
+        margin-top: 0;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .footer-title {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .footer-email {
+      font-size: 16px;
+      margin-top: 10px;
+      a {
+        margin-top: 0;
+      }
+    }
+    .footer-attention {
+      opacity: 1;
+      .footer-attention-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .attention-text {
+          width: 100%;
+          margin-bottom: 10px;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: 0.03em;
+          color: $fontBase;
+        }
+      }
+    }
+  }
 }

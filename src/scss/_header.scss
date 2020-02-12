@@ -223,8 +223,10 @@
         .header__main-menu-bottom {
             display: flex;
             justify-content: center;
+            padding: 0 5px;
             img {
                 width: 26px;
+                height: 29px;
             }
             span {
                 width: auto;
