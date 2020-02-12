@@ -29,22 +29,22 @@ $(function () {
     initFeedbackForm($('#feedback_form'));
 
    changeProgram()
-   if ($('#map')) {
+   if ($('#map').length) {
       mapInit()
    }
-   if ($('select.select')) {
+
+   if ($('select.select').length) {
       customSelectInit()
    }
-   if ($('video')) {
+   if ($('video').length) {
       videoOptimization()
    }
+
    if ($('[data-tabs-block]').length) {
       $(this).each(function () {
          initTabs($(this));
       })
    }
-
-
 });
 
 function changeProgram() {

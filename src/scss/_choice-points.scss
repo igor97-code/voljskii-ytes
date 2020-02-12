@@ -74,10 +74,10 @@
                 right: 0;
                 bottom: 0;
                 top: 80%;
-                background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
-                background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
-                background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
-                background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
+                background: -webkit-gradient(linear, left bottom, left top, from(#595858), to(rgba(0, 0, 0, 0)));
+                background: -webkit-linear-gradient(bottom, #595858, rgba(0, 0, 0, 0));
+                background: -o-linear-gradient(bottom, #595858, rgba(0, 0, 0, 0));
+                background: linear-gradient(0deg, #595858, rgba(0, 0, 0, 0));
             }
             h4 {
                 position: relative;
