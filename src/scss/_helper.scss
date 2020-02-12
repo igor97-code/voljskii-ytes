@@ -258,3 +258,52 @@
     background: #fff !important;
 }
 
+.basic-list {
+    list-style: none;
+    padding-left: 0;
+    li {
+        position: relative;
+        padding-left: 28px;
+        font-family: $fontBase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        color: $colorGray;
+        margin-bottom: 18px;
+        &:before {
+            display: block;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: $colorButton;
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+    }
+}
+.number-proc {
+    display: inline-block;
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $colorText;
+    padding-left: 29px;
+    position: relative;
+    &:before {
+        display: block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #00A3FF;;
+        position: absolute;
+        left: 0;
+        top: 0.5px;
+    }
+}

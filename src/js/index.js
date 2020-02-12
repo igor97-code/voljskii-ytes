@@ -1,6 +1,6 @@
-import * as $ from 'jquery';
+import Choices from "choices.js";
+import * as $  from 'jquery';
 import 'slick-carousel';
-import 'jquery-form-styler/dist/jquery.formstyler.min.js'
 
 import {
     initPlaceholders,
@@ -28,6 +28,10 @@ $(function () {
 
     initFeedbackForm($('#feedback_form'));
 
+   changeProgram()
+   if ($('select.select')) {
+      customSelectInit()
+   }
    if ($('video')) {
       videoOptimization()
    }
@@ -36,11 +40,32 @@ $(function () {
          initTabs($(this));
       })
    }
+
    /*if ($('#map')) {
       mapInit()
    }*/
-   $('select.select').styler();
 });
+
+function changeProgram() {
+   $('#program-select').change(function (e) {
+      $('.program-table').each(function () {
+         if($(this).data('program') == e.target.value) {
+            $(this).removeClass('hide')
+         } else {
+            $(this).addClass('hide')
+         }
+      })
+
+   })
+}
+
+function customSelectInit() {
+   const element = document.querySelector('select.select');
+   const choices = new Choices(element, {
+      searchEnabled: false,
+      itemSelectText: '',
+   });
+}
 
 
 
@@ -70,12 +95,12 @@ function gallerySliderInit() {
          nextArrow: $('.gallery-next'),
       });
       $('.gallery__slider-small').slick({
+         infinite: false,
          slidesToShow: 5,
          slidesToScroll: 1,
          asNavFor: '.gallery__slider-big',
          dots: false,
          arrows: false,
-         centerMode: true,
          focusOnSelect: true
       });
 

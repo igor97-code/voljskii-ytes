@@ -65,6 +65,12 @@
 //Стили для компонента Tabs
 @import '_tabs';
 
+//Стили для Select
+@import '_select';
+
+//Стили для программ
+@import '_programs';
+
 
 
 
@@ -73,7 +79,8 @@
 @import '../../node_modules/slick-carousel/slick/slick-theme.css';
 
 
-//Select plugin.
-@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.css';
-@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css';
+
+@import '../../node_modules/choices.js/public/assets/styles/choices.min.css';
+
+
 

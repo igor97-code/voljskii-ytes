@@ -1,13 +1,10 @@
 .footer{
   display: block;
   position: relative;
-  z-index: 100;
- // margin: -563px 0 0;
-  //height: 563px;
   background: $colorPurple;
   padding-top:30px;
   font-weight: 800;
-  font-family: Manrope;
+  font-family: $fontBase;
   .footer-logo{
     text-align: center;
     a {
