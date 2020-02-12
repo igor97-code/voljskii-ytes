@@ -47,8 +47,10 @@
         }
 
         &:hover {
+            background: linear-gradient(0deg, rgba(33, 43, 85, 0.7), rgba(33, 43, 85, 0.7));
             img {
                 transform: scale(1.1);
+                filter: brightness(50%);
             }
         }
         img {
@@ -62,6 +64,8 @@
         }
         .info {
             padding-left: 20px;
+            z-index: 2;
+            position: relative;
             &:before {
                 content: "";
                 display: block;
@@ -69,7 +73,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                top: 70%;
+                top: 80%;
                 background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
                 background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
                 background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
@@ -92,11 +96,42 @@
                 color: #FFFFFF;
                 margin-bottom: 16px;
             }
+            p {
+                position: absolute;
+                bottom: -300px;
+                transition: bottom 0.5s linear;
+                font-family: $fontBase;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 178.9%;
+                letter-spacing: 0.03em;
+                color: $colorMain;
+                margin-bottom: 40px;
+                margin-top: 5px;
+            }
         }
     }
 
     .clr{
         display: none;
+    }
+    @include desktop{
+        .choice-points-block {
+            height: 246px;
+            &:hover {
+                .info {
+                    p {
+                        position: relative;
+                        bottom: 0;
+                    }
+                    span {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
     }
     @include tablet-mobile{
         .col.w-33 {

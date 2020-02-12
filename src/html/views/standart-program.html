@@ -1,0 +1,86 @@
+<% var data = {
+title: "Волжский утес"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="section p-all-0">
+    <div class="head_info p2">
+        <div class="container">
+            <div class="head">
+                <h1 class="text-align-center m-b-0">Лечебная программа «Стандарт»</h1>
+                <p class="text-align-center color-main m-t-30">Заболевания органов кровообращения, заболевания опорно-двигательного аппарата, заболевания нервной системы, заболевания органов желудочно-кишечного тракта.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gallery__slider">
+    <div class="gallery__slider-wrapper">
+        <div class="gallery__slider-close"></div>
+        <div class="gallery-prev">
+            <span class="icon-up-arrow-3"></span>
+        </div>
+        <div class="gallery__slider-big"></div>
+        <div class="gallery-next">
+            <span class="icon-up-arrow-3"></span>
+        </div>
+        <div class="gallery__slider-small"></div>
+
+    </div>
+</div>
+<div class="section sections-block">
+    <div class="container">
+        <h2 class="m-t-0">Галерея</h2>
+        <div class="gallery">
+            <div class="row">
+                <div class="col w-33 item" data-slide="1">
+                    <img alt="1" src="../../img/others/gallery/item-1.png">
+                </div>
+                <div class="col w-33 item" data-slide="2">
+                    <img alt="2" src="../../img/others/gallery/item-2.png">
+
+                </div>
+                <div class="col w-33 item" data-slide="3">
+                    <img alt="3" src="../../img/others/gallery/item-3.png">
+
+                </div>
+                <div class="col w-33 item" data-slide="4">
+                    <img alt="4" src="../../img/others/gallery/item-4.png">
+
+                </div>
+                <div class="col w-33 item" data-slide="5">
+                    <img alt="5" src="../../img/others/gallery/item-5.png">
+
+                </div>
+                <!-- После data-slide="5" - это 6 блок общий-->
+                <div class="col w-33 item">
+                    <div class="more-item">
+                        <span>Еще <span>3</span> фото</span>
+                    </div>
+                </div>
+                <!-- После data-slide="5" следующие блоки скрыты-->
+                <div class="col w-33 item hidden" data-slide="7">
+                    <img alt="1" src="../../img/others/gallery/item-1.png">
+                </div>
+                <div class="col w-33 item hidden" data-slide="8">
+                    <img alt="1" src="../../img/others/gallery/item-1.png">
+                </div>
+                <div class="col w-33 item hidden" data-slide="9">
+                    <img alt="1" src="../../img/others/gallery/item-1.png">
+                </div>
+                <div class="col w-33 item hidden" data-slide="10">
+                    <img alt="1" src="../../img/others/gallery/item-1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<select class="select" name="" id="">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+</select>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

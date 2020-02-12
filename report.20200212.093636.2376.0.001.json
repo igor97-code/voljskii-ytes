@@ -1,0 +1,336 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200212.093636.2376.0.001.json",
+    "dumpEventTime": "2020-02-12T09:36:36Z",
+    "dumpEventTimeStamp": "1581489396330",
+    "processId": 2376,
+    "cwd": "D:\\WORK\\volgacliff_frontend",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\HP\\.PhpStorm2018.3\\config\\plugins\\ImportCost\\lib\\node_modules\\worker-farm\\lib\\child\\index.js",
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\JetBrains\\PhpStorm 2018.3.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\js-language-service.js",
+      "-id=1581420847166"
+    ],
+    "nodejsVersion": "v13.2.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.2.0",
+      "v8": "7.9.317.23-node.20",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.2.0/node-v13.2.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.2.0/node-v13.2.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.2.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17134",
+    "osVersion": "Windows 10 Enterprise",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 2594,
+        "user": 3313718,
+        "nice": 0,
+        "sys": 3023984,
+        "idle": 25544281,
+        "irq": 179703
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 2594,
+        "user": 3386984,
+        "nice": 0,
+        "sys": 2129109,
+        "idle": 26365609,
+        "irq": 40828
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 2594,
+        "user": 3831671,
+        "nice": 0,
+        "sys": 2198343,
+        "idle": 25851687,
+        "irq": 19718
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 2594,
+        "user": 3866984,
+        "nice": 0,
+        "sys": 2669531,
+        "idle": 25345187,
+        "irq": 23015
+      }
+    ],
+    "host": "ZVIKSZ"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7ed8d1479",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ed8d57ec",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ed8d47a8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ed9c0f3b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee1e7e6e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee1cf5c1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee09690c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee072323",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee07077b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee09c15d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee09deec",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee093e83",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee092614",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee0b4604",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ede0eadf",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7ee62ad2d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000003cecff07eeb",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 541839360,
+    "totalCommittedMemory": 541839360,
+    "usedMemory": 495669176,
+    "availableMemory": 1694820136,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16758784,
+        "used": 2159240,
+        "available": 14599544
+      },
+      "old_space": {
+        "memorySize": 460165120,
+        "committedMemory": 460165120,
+        "capacity": 447833184,
+        "used": 447687344,
+        "available": 145840
+      },
+      "code_space": {
+        "memorySize": 3313664,
+        "committedMemory": 3313664,
+        "capacity": 1719776,
+        "used": 1719776,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1576960,
+        "committedMemory": 1576960,
+        "capacity": 1268880,
+        "used": 1268880,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 42344448,
+        "committedMemory": 42344448,
+        "capacity": 42256608,
+        "used": 42256608,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544288,
+        "used": 544288,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 32.14,
+    "kernelCpuSeconds": 5.015,
+    "cpuConsumptionPercent": 37.5303,
+    "maxRss": 578461696,
+    "pageFaults": {
+      "IORequired": 306081,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2444,
+      "writes": 96
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\HP\\AppData\\Roaming",
+    "asl.log": "Destination=file",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132192515258226281",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "ZVIKSZ",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DokanLibrary1": "C:\\Program Files\\Dokan\\Dokan Library-1.1.0\\",
+    "DokanLibrary1_LibraryPath_x64": "C:\\Program Files\\Dokan\\Dokan Library-1.1.0\\lib\\",
+    "DokanLibrary1_LibraryPath_x86": "C:\\Program Files\\Dokan\\Dokan Library-1.1.0\\x86\\lib\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ESET_OPTIONS": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\HP",
+    "LOCALAPPDATA": "C:\\Users\\HP\\AppData\\Local",
+    "LOGONSERVER": "\\\\ZVIKSZ",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\HP\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\HP\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\OSPanel\\modules\\php\\PHP-7.0-x64\\php.exe;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\MongoDB\\Server\\4.2\\bin;C:\\Users\\HP\\.windows-build-tools\\python27\\;C:\\Users\\HP\\.windows-build-tools\\python27\\;C:\\Ruby25-x64\\bin;C:\\Users\\HP\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\HP\\AppData\\Roaming\\npm;C:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\heroku\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "RUBYOPT": "-Eutf-8",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\HP\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\HP\\AppData\\Local\\Temp",
+    "USERDOMAIN": "ZVIKSZ",
+    "USERDOMAIN_ROAMINGPROFILE": "ZVIKSZ",
+    "USERNAME": "HP",
+    "USERPROFILE": "C:\\Users\\HP",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\system32\\napinsp.dll"
+  ]
+}

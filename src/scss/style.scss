@@ -55,6 +55,9 @@
 //Слайдер
 @import '_sliders';
 
+//Галерея
+@import '_gallery';
+
 //Блок с отправкой вопроса.
 @import '_question';
 
@@ -68,4 +71,9 @@
 //Slick слайдер(стили).
 @import '../../node_modules/slick-carousel/slick/slick.css';
 @import '../../node_modules/slick-carousel/slick/slick-theme.css';
+
+
+//Select plugin.
+@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.css';
+@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css';
 

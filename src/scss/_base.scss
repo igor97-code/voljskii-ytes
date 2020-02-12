@@ -32,6 +32,12 @@ body {
     position: relative;
     z-index: 99;
 }
+.gallery-slider-open {
+    .body {
+        z-index: 1000;
+        position: inherit;
+    }
+}
 
 .container {
     margin: 0 auto;
