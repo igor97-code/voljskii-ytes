@@ -29,6 +29,9 @@ $(function () {
     initFeedbackForm($('#feedback_form'));
 
    changeProgram()
+   if ($('#map')) {
+      mapInit()
+   }
    if ($('select.select')) {
       customSelectInit()
    }
@@ -41,9 +44,7 @@ $(function () {
       })
    }
 
-   /*if ($('#map')) {
-      mapInit()
-   }*/
+
 });
 
 function changeProgram() {
@@ -124,7 +125,7 @@ function mapInit() {
       }),
       myPlacemark = new ymaps.Placemark([53.38013374866902,49.088951521911824], {}, {
          iconLayout: 'default#image',
-         iconImageHref: window.location.origin + "../../img/others/map-icon.png",
+         iconImageHref: "/img/others/map-icon.png",
          iconImageSize: [41, 46],
       });
       myMap.geoObjects
