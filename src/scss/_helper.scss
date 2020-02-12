@@ -353,7 +353,8 @@
             text-align: center;
             color: $colorText;
             background: #F4F4F4;
-            &.submenu__active {
+            transition: background 0.5s linear;
+            &.submenu__active, &:hover {
                 background: $colorButton;
                 color: $colorMain
             }

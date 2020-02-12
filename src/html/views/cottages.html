@@ -1,0 +1,84 @@
+<% var data = {
+title: "Волжский утес"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="breadcrumbs">
+    <a href="/">Главная</a>
+    <span>Размещение в номерах</span>
+</div>
+<div class="section s-block p-b-0 p-t-0">
+    <div class="container">
+        <h2 class="text-align-center m-t-0 m-b-25">Размещение в коттеджах</h2>
+        <div class="submenu">
+            <a href="/">В номерах</a>
+            <a href="/" class="submenu__active">В коттеджах</a>
+        </div>
+        <div class="points-blocks">
+            <div class="row">
+                <div class="col w-33 " >
+                    <div class="choice-points-block b1i1">
+                        <img alt="1" src="../../img/others/cottages/item-1.png">
+                        <div class="info">
+                            <h4 class="subtitle22">Резиденция</h4>
+                            <span class="price">от 3 540 ₽</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut dolorem eum ex quod recusandae rerum vero voluptates! Quo, ullam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-33 " >
+                    <div class="choice-points-block b1i1">
+                        <img alt="2" src="../../img/others/cottages/item-2.png">
+                        <div class="info">
+                            <h4 class="subtitle22">Альпийское шале</h4>
+                            <span class="price">от 3 540 ₽</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut dolorem eum ex quod recusandae rerum vero voluptates! Quo, ullam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-33 " >
+                    <div class="choice-points-block b1i1">
+                        <img alt="3" src="../../img/others/cottages/item-3.png">
+                        <div class="info">
+                            <h4 class="subtitle22">Дом Охотника (всесезонный)</h4>
+                            <span class="price">от 3 540 ₽</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut dolorem eum ex quod recusandae rerum vero voluptates! Quo, ullam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-33 " >
+                    <div class="choice-points-block b1i1">
+                        <img alt="4" src="../../img/others/cottages/item-4.png">
+                        <div class="info">
+                            <h4 class="subtitle22">Дом Рыбака (всесезонный)</h4>
+                            <span class="price">от 3 540 ₽</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut dolorem eum ex quod recusandae rerum vero voluptates! Quo, ullam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section sections-block p-b-30">
+    <div class="container">
+        <h2 class="m-t-0 m-b-10">SEO text</h2>
+        <div class="text-content">
+            <p class="m-b-30">
+                Именно благодаря прекрасным видам в нашем санатории проходил саммит «Россия — ЕС 2007». Накануне был проведен полноценный ремонт во всех помещениях, не исключая лечебные, которые были оснащены новейшим медицинским оборудованием. На территории санатория размещается официальная резиденция президента Российской Федерации, которая располагается в двухэтажном комплексе. Если вы хотите выбрать лучший санаторий в Самарской области — «Волжский утёс» именно то, что вам нужно.
+            </p>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
