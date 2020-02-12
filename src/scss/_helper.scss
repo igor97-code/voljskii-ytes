@@ -307,3 +307,56 @@
         top: 0.5px;
     }
 }
+
+.breadcrumbs {
+    text-align: center;
+    padding-top: 42px;
+    margin-bottom: 19px;
+    a, span {
+        display: inline-block;
+        font-family: $fontBase;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $colorGray;
+    }
+    a {
+        text-decoration: none;
+        margin-right: 5px;
+        transition: 0.5s;
+        &:after {
+            content: '/';
+            display: inline-block;
+            margin-left: 6px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.section {
+    .submenu {
+        text-align: center;
+        margin-bottom: 75px;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-family: $fontBase;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: $colorText;
+            background: #F4F4F4;
+            &.submenu__active {
+                background: $colorButton;
+                color: $colorMain
+            }
+        }
+    }
+}
