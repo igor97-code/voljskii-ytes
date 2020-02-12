@@ -10,28 +10,30 @@ import {
 } from './components/form';
 
 import {initTabs} from './components/tabs'
-
+import bookingInit from './components/booking/booking';
 
 $(function () {
-    toggleMainMenu();
-    oneItemSlider();
-    playAboutVideo();
-    visibleAroundSlider();
+   toggleMainMenu();
+   oneItemSlider();
+   playAboutVideo();
+   visibleAroundSlider();
 
-    // кастомные плейсхолдеры
-    initPlaceholders();
-    // маски ввода
-    initMaskedInput();
+   // кастомные плейсхолдеры
+   initPlaceholders();
+   // маски ввода
+   initMaskedInput();
 
-    initFeedbackForm($('#feedback_form'));
+   initFeedbackForm($('#feedback_form'));
 
-    videoOptimization()
+   videoOptimization();
 
    if ($('[data-tabs-block]').length) {
       $(this).each(function () {
          initTabs($(this));
       })
    }
+
+   bookingInit();
 });
 
 function toggleMainMenu() {

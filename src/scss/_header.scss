@@ -8,6 +8,11 @@
   background: $colorMain;
   padding: 12px 0;
   transition: height 0.5s linear;
+
+    &-margin {
+        height: 103px;
+    }
+
   .header-wrapper {
     display: flex;
     justify-content: flex-start;

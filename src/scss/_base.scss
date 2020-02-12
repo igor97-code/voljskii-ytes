@@ -47,6 +47,11 @@ body {
     &.small{
         max-width: 490px;
     }
+
+    &.for-booking {
+        max-width: 960px;
+    }
+
     @include mobile{
         padding: 1px 5px;
     }

@@ -49,10 +49,59 @@
               </div>
           </div>
       </div>
+
+
+      <!-- Календарь для мобильной версии -->
+      <div id="calendar_wrapper" class="calendar-wrapper">
+          <div class="top">
+              <a href="#" class="close">Закрыть</a>
+          </div>
+
+          <div id="calendar_date" class="select-date">
+
+              <div id="calendar_date_in" class="date-wrap in">
+                  <p class="label">Дата заезда</p>
+                  <div class="date">
+                      <p class="day"></p>
+                      <p class="month"></p>
+                      <p class="weekday"></p>
+                  </div>
+              </div>
+
+              <div id="calendar_date_out" class="date-wrap out">
+                  <p class="label">Дата выезда</p>
+                  <div class="date">
+                      <p class="day"></p>
+                      <p class="month"></p>
+                      <p class="weekday"></p>
+                  </div>
+              </div>
+
+              <div class="nights">
+                  <i class="icon icon-moon"></i>
+                  <p><span class="num">9</span> ночей</p>
+              </div>
+          </div>
+
+          <div class="calendar">
+              <div class="week-header">
+                  <div class="day d1">Пн</div>
+                  <div class="day d2">Вт</div>
+                  <div class="day d3">Ср</div>
+                  <div class="day d4">Чт</div>
+                  <div class="day d5">Пт</div>
+                  <div class="day d6">Сб</div>
+                  <div class="day d7">Вс</div>
+              </div>
+              <div id="calendar" class="days">
+
+              </div>
+          </div>
+          <span class="close sprite"></span>
+      </div>
+
       <script src="https://api-maps.yandex.ru/2.1/?apikey=748aff90-d672-406b-a5c9-3cab949b926a&lang=ru_RU"></script>
       <script>
-
-
          ymaps.ready(function () {
             var myMap = new ymaps.Map("map", {
                center: [53.38013374866902,49.088951521911824],
@@ -67,8 +116,6 @@
             myMap.geoObjects
                .add(myPlacemark)
          });
-
-
       </script>
     <script src="js/bundle.js"></script>
   </body>

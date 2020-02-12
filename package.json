@@ -12,6 +12,7 @@
   "dependencies": {
     "inputmask": "^5.0.3",
     "jquery": "^3.4.1",
+    "moment": "^2.24.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

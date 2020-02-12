@@ -32,35 +32,35 @@
 @import 'footer';
 
 //главные блоки страниц с информацией
-@import '_head-info';
+@import 'head-info';
 
 //позиционирование информации
-@import '_infographic';
+@import 'infographic';
 
 //Блок переключения услуг на главной странице.
-@import '_choice-points';
+@import 'choice-points';
 
 //кнопки.
-@import '_buttons';
+@import 'buttons';
 
 //Акции.
-@import '_stocks';
+@import 'stocks';
 
 //Преимущества.
-@import '_advantages';
+@import 'advantages';
 
 //Видео
-@import '_video';
+@import 'video';
 
 //Слайдер
-@import '_sliders';
+@import 'sliders';
 
 //Блок с отправкой вопроса.
-@import '_question';
+@import 'question';
 
 
 //Стили для компонента Tabs
-@import '_tabs';
+@import 'tabs';
 
 
 
@@ -69,3 +69,5 @@
 @import '../../node_modules/slick-carousel/slick/slick.css';
 @import '../../node_modules/slick-carousel/slick/slick-theme.css';
 
+// стили для формы бронирования
+@import 'booking';
