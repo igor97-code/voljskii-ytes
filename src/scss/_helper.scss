@@ -354,6 +354,7 @@
             color: $colorText;
             background: #F4F4F4;
             transition: background 0.5s linear;
+            margin-bottom: 5px;
             &.submenu__active, &:hover {
                 background: $colorButton;
                 color: $colorMain
